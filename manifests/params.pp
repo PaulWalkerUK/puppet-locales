@@ -87,6 +87,8 @@ class locales::params {
       $locale_gen_cmd    = '/usr/bin/locale-gen' # /usr/sbin will also work but considered legacy
       $config_file       = '/etc/locales.gen'
       $default_file      = '/etc/locale.conf'
+      $update_locale_cmd = undef
+      $supported_locales = undef
     }
     /(Gentoo|Sabayon)/: {
       $package           = 'glibc'
